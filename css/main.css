@@ -1,13 +1,24 @@
+html{
+	font: size 16px;
+}
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display:flex;
+	max-width:1200px;
+	width: 90%;
 	justify-content: center;
 	align-items: center;
+	font-size:1em;
 }
 
 .container{
 	max-width: 1200px;
-	margin: 0 auto;
+	width: 90% ;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
 }
 
 h1,
@@ -18,67 +29,80 @@ h3 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 }
 h2 {
-	font-size: 18px;
+	font-size: 1.125em;
 }
 h3 {
-	font-size: 12px;
+	font-size: 0.75em;
 }
 
 p {
-	font-size: 14px;
-	line-height: 21px;
-    padding: 0 30px;
+	font-size: 0.875em;
+	
 }
-
+/*Desktop queries here*/
 /*The widths are in a percentage!*/
+@media all and (min-width:1200px){
 header {
-	height: 110px;
-	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+	display:flex;
+	justify-content: space-around;
+	align-content:center;
+}
+}
+header h1 {
+	width:30%
+	text-align:left;	
+	display:flex;
+	justify-content: space-between;
+
 }
 
-header h1 {
-	float: left;
-	margin: 0;
-	padding: 38px 0;
-}
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+	width:40%;
+	padding:0; 
+	text-align:30%;
+
 }
+
 header nav ul {
-	margin: 0;
-	padding: 0;
+	text-align: center;
+	display:flex;
+	flex-wrap: wrap;	
+	
+
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
+
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
 }
 
+@media all and (min-width:768px){
+/*Tablet queries here*/	
 /*The widths are in a percentage!*/
+
+
 .top-section,
 .bottom-section {
-	margin: 0 auto;
-	clear: both;
-}
+	justify-content: space-between;
+	align-items: flex-start;
+	border-top: 1px solid #eee;
 
+}
+}
 .main-image {
-	height: auto;
-	float: left;
+	width:100%
 }
 .main-image img {
 	width: 100%;
@@ -86,8 +110,9 @@ header nav ul li a{
 }
 
 .main-title {
-	height: auto;
-	float: left;
+	text-align: center;
+	display:flex;
+	flex-wrap: wrap;
 }
 .main-title h2 {
 	text-align: left;
@@ -96,21 +121,22 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
-	line-height: 25px;
+	font-size: 1em;
+	
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
-	height: auto;
-	float: left;
-	border-top: 1px solid #eee;
+	border-top: none;
+	flex-basis:30%;
 }
 
 .section-one h3 {
-	padding: 10px 0;
+	border-top: none;
+	flex-basis:30%;
+	justify-content: center;
+	align-content: flex-start;
 }
 
 .section-two {
@@ -120,7 +146,8 @@ header nav ul li a{
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	border-top: none;
+	flex-basis:30%;
 }
 
 .menu {
@@ -134,26 +161,26 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
-	line-height: 21px;
+	font-size: 1em;
+	
 }
 
 .address {
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1em;
+;
 }
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
 	text-align: center;
+	justify-content:space-around;
+	flex-flow:row-wrap;
+
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: 0.875em;
 }
