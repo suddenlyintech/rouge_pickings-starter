@@ -2,6 +2,9 @@ body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	max-width:1200px;
 	font-size:1em;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .container{
@@ -44,6 +47,7 @@ p {
 /*Desktop queries here*/
 /*The widths are in a percentage!*/
 header {
+	width:40%;
 	display:flex;
 	justify-content: center;
 	align-items:center;
@@ -67,17 +71,16 @@ hr{
 }
 	
 header h1 span {
+	padding-left:19px ;
 	color: #77a466;
-	display:flex;
-	justify-content:center;
-	align-items:center;
+
 }
 
 header nav {
 	width:40%;
 	text-align:30%;
 	display:flex;
-	justify-content: center;
+	justify-content:space-between;
 	align-items:center;
 	flex-direction:row;
 	
@@ -86,24 +89,36 @@ header nav {
 
 header nav ul {
 	text-align: center;
+	padding:0;
 
 }
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	display:flex;
-	justify-content: center;
-	align-items:flex-start;
-	align-content: center;	
-	flex-direction: row;
+	margin:0;
+	margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+	padding:0;
+	padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 	
 	
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
-	
+	display: block;
+    list-style-type:none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 @media (max-width:728px){
 	/*not sure what to put inside these brackets*/
@@ -159,12 +174,9 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 90%;
 	border-top: none;
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	flex-direction: column;
+
 
 }
 
