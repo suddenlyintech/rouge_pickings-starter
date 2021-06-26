@@ -1,11 +1,6 @@
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	display:flex;
-	justify-content: center;
-	align-items:center;
-	flex:flex-basis;
 	max-width:1200px;
-	width: 90%;
 	font-size:1em;
 }
 
@@ -15,7 +10,7 @@ body {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	flex:row wrap;
+	flex-flow:row wrap;
 
 }
 html{
@@ -52,34 +47,45 @@ header {
 	display:flex;
 	justify-content: center;
 	align-items:center;
-	align-content:center;
-	flex-wrap:flex-basis;
+	flex-direction: column;
+	
 }
 
 header h1 {
-	width:30%
+	display:flex;
+	justify-content:space-around;
+	align-self:center;
+	align-content:center;
+	
+
 	
 
 }
 
+hr{
+ border: 1px solid green;
+}
+	
 header h1 span {
 	color: #77a466;
+	display:flex;
+	justify-content:center;
+	align-items:center;
 }
 
 header nav {
 	width:40%;
 	text-align:30%;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction:row;
 	
 
 }
 
 header nav ul {
 	text-align: center;
-
-	
-	
-		
-	
 
 }
 header nav ul li {
@@ -88,8 +94,9 @@ header nav ul li {
 	font-size: 0.875em;
 	display:flex;
 	justify-content: center;
-	align-items:center;
+	align-items:flex-start;
 	align-content: center;	
+	flex-direction: row;
 	
 	
 }
@@ -98,7 +105,9 @@ header nav ul li a{
 	color:#77a466;
 	
 }
-
+@media (max-width:728px){
+	/*not sure what to put inside these brackets*/
+	}
 @media (min-width:1200px){
 /*not sure what to put inside these brackets*/
 }
@@ -113,10 +122,11 @@ header nav ul li a{
 .top-section,	
 .bottom-section {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: center;
-	flex:row-wrap;
+	flex-flow: row-wrap;
 	border-top:1px solid #eee;
 
 }
@@ -151,6 +161,10 @@ header nav ul li a{
 .section-three {
 	width: 33%;
 	border-top: none;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-direction: column;
 
 }
 
@@ -214,7 +228,4 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
-}
-@media (max-width:728px){
-/*not sure what to put inside these brackets*/
 }
