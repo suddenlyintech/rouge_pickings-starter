@@ -46,21 +46,15 @@ p {
 }
 /*Desktop queries here*/
 /*The widths are in a percentage!*/
-header {
-	width:40%;
-	display:flex;
-	justify-content: center;
-	align-items:center;
-	flex-direction: column;
+header {	
+	padding:0;
+	margin:0;
+
 	
 }
 
 header h1 {
-	display:flex;
-	justify-content:space-around;
-	align-self:center;
-	align-content:center;
-	
+	text-align: center;
 
 	
 
@@ -69,30 +63,36 @@ header h1 {
 hr{
  border: 1px solid green;
 }
+
+ hr.new{
+ border: 1px solid gray;
+}
 	
+
 header h1 span {
-	padding-left:19px ;
+	
 	color: #77a466;
 
 }
 
+
 header nav {
 	width:40%;
 	text-align:30%;
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
-	flex-direction:row;
+	
 	
 
 }
 
 header nav ul {
-	text-align: center;
-	padding:0;
+	margin:0%;
+	padding:0%;
+	
+
 
 }
 header nav ul li {
+	list-style:none;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
@@ -116,9 +116,12 @@ header nav ul li a{
     list-style-type:none;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+	margin-left: auto;
+	margin-right:auto;
+	width: 2em;
+	
+
+   
 }
 @media (max-width:728px){
 	/*not sure what to put inside these brackets*/
@@ -161,7 +164,7 @@ header nav ul li a{
 }
 .main-title h2 {
 	text-align: left;
-	padding: 5px 0;
+	padding: 10px 0;
 	color: #77a466;
 	
 }
@@ -176,18 +179,27 @@ header nav ul li a{
 .section-three {
 	width: 90%;
 	border-top: none;
+	margin:0%
 
 
 }
 
 .section-one h3 {
 	border-top: none;
+	text-align: left;
+	padding: 10px 0;
+	margin:0%
 
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	border-left: none;
+	border-right: none;
+	
+	
+/*Will need this for tablets
+border-left:1px solid #eee;
+border-right: 1px solid #eee;*/
 	
 	
 }
