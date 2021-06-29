@@ -185,6 +185,7 @@ footer span {
     justify-content: space-between;
     align-items: flex-start;
     border-top: 1px solid #eee;
+    flex-direction: row;
   }
   .section-one,
   .section-two,
